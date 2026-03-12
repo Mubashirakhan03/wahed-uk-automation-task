@@ -1,0 +1,43 @@
+{
+  "defaultValues": {
+    "investmentAmount": "10000",
+    "portfolioStrategy": "Very Aggressive",
+    "includePension": false,
+    "totalAnnualFee": "£153.50/year",
+    "wahedFee": "1.00%",
+    "fundCosts": "0.48%",
+    "marketSpread": "0.05%"
+  },
+  "testCases": [
+    {
+      "amount": "10000",
+      "strategy": "Very Aggressive",
+      "pension": true,
+      "expectedFee": "£183.50/year"
+    },
+    {
+      "amount": "1000",
+      "strategy": "Aggressive",
+      "pension": false,
+      "expectedFee": "£11.54/year"
+    },
+    {
+      "amount": "2000",
+      "strategy": "Moderately Aggressive",
+      "pension": false,
+      "expectedFee": "£48.34/year"
+    },
+    {
+      "amount": "3000",
+      "strategy": "Moderately Conservative",
+      "pension": false,
+      "expectedFee": "£57.78/year"
+    },
+    {
+      "amount": "5000",
+      "strategy": "Very Conservative",
+      "pension": true,
+      "expectedFee": "£122.10/year"
+    }
+  ]
+}
